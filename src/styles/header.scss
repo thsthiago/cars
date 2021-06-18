@@ -1,7 +1,17 @@
 header {
-  background: $primary;
+  height: 70px;
 
-  ul li a {
-    color: $primary;
+  div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+    nav {
+      ul {
+        list-style: none;
+        display: flex;
+      }
+    }
   }
 }
