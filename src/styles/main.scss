@@ -1,0 +1,30 @@
+@import "./header";
+
+$primary: #6c26ff;
+$secondary: #242424;
+$button: #4700df;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+nav a {
+  font-family: "Oswald", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
