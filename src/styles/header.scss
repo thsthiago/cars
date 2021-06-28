@@ -1,17 +1,132 @@
-header {
+.header {
   height: 70px;
 
-  div {
+  .header__container {
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 0 2%;
 
-    nav {
-      ul {
-        list-style: none;
+    .header__nav-container-desktop {
+      display: none;
+    }
+
+    .header__nav-container-mobile {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      width: 40px;
+      background-color: #fff;
+
+      .header__btn {
+        width: 40px;
+        height: 35px;
         display: flex;
+        align-items: center;
+        position: absolute;
+        top: 3%;
+        right: 3%;
+        background-color: #fff;
+
+        .header__burger {
+          display: block;
+          transition: width 0.4s;
+        }
+
+        .header__burger,
+        .header__burger::before,
+        .header__burger::after {
+          width: 100%;
+          height: 5px;
+          background: $primary;
+          border-radius: 2px;
+        }
+
+        .header__burger::before,
+        .header__burger::after {
+          content: "";
+          position: absolute;
+          left: 0;
+        }
+
+        .header__burger::before {
+          top: 0;
+        }
+
+        .header__burger::after {
+          bottom: 0;
+          transition: width 0.4s;
+        }
+
+        .--burger {
+          width: 80%;
+        }
+
+        .--burger::before {
+          width: 100%;
+        }
+
+        .--burger::after {
+          width: 50%;
+        }
       }
+
+      .--header-btn-active {
+        position: absolute;
+        left: 3%;
+        top: 3%;
+      }
+
+      .header__nav-mobile {
+        display: none;
+        width: 100%;
+
+        .header__list {
+          width: 100%;
+          height: 100%;
+          list-style: none;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          .header__item {
+            width: 100%;
+            height: 40px;
+
+            .header__link-mobile {
+              display: block;
+              width: 100%;
+              height: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              transition: background 0.4s, color 0.4s;
+            }
+
+            .header__link-mobile:hover {
+              background: $primary;
+              color: $text;
+            }
+          }
+        }
+      }
+
+      .--header-nav-active {
+        display: block;
+      }
+    }
+
+    .--header-mobile-active {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 100vh;
+      min-height: 400px;
+      position: absolute;
+      top: 0;
+      left: 0;
     }
   }
 }

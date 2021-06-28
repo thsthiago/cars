@@ -1,0 +1,9 @@
+.initial {
+  width: 100%;
+  height: calc(100vh - 70px);
+  min-height: 400px;
+  max-height: 900px;
+  background: #000 url("../assets/background.png") no-repeat;
+  background-size: 75%;
+  background-position: bottom right;
+}
