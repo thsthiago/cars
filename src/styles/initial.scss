@@ -6,4 +6,65 @@
   background: #000 url("../assets/background.png") no-repeat;
   background-size: 75%;
   background-position: bottom right;
+  padding-top: 10%;
+  padding-left: 50px;
+}
+
+.initial__item {
+  position: relative;
+  padding: 15px 0;
+}
+
+.initial__container {
+  height: 70px;
+  display: block;
+  color: $text;
+  font-weight: 400;
+  transform: skew(-15deg);
+}
+
+.initial__title {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: $text;
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.--title-secondary {
+  color: $secondary;
+}
+
+.--container-primary {
+  background: $primary;
+  width: 45%;
+  max-width: 190px;
+  padding-left: 10%;
+}
+
+.--container-secondary {
+  background: #c4c4c4;
+  width: 80%;
+  max-width: 350px;
+  color: $secondary;
+}
+
+.--item-primary {
+  padding-left: 20%;
+  .initial__title {
+    left: 25%;
+  }
+}
+.--item-secondary {
+  padding-left: 10%;
+  .initial__title {
+    left: 15%;
+  }
+}
+.--item-third {
+  padding-left: 0%;
+  .initial__title {
+    left: 5%;
+  }
 }
