@@ -58,13 +58,16 @@ button {
 }
 
 .--title {
+  width: 100%;
   color: $primary;
-  font-size: 40px;
+  font-size: 25px;
+  position: relative;
+  text-align: center;
 }
 
 .--title::after,
 .--title::before {
-  width: 100%;
+  width: 20%;
   height: 7px;
   position: absolute;
   top: 50%;

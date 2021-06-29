@@ -1,11 +1,16 @@
 .header {
+  width: 100%;
   height: 70px;
+  position: relative;
 
   .header__container {
     width: 100%;
     height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    position: relative;
     padding: 0 2%;
 
     .header__nav-container-desktop {
@@ -25,7 +30,8 @@
         display: flex;
         align-items: center;
         position: absolute;
-        top: 3%;
+        top: 50%;
+        transform: translateY(-50%);
         right: 3%;
         background-color: #fff;
 
@@ -76,6 +82,7 @@
         position: absolute;
         left: 3%;
         top: 3%;
+        transform: translateY(0);
       }
 
       .header__nav-mobile {
@@ -103,8 +110,12 @@
               justify-content: center;
               align-items: center;
               transition: background 0.4s, color 0.4s;
+              color: $secondary;
             }
 
+            .--link-select {
+              color: $primary;
+            }
             .header__link-mobile:hover {
               background: $primary;
               color: $text;
@@ -121,13 +132,73 @@
     .--header-mobile-active {
       display: flex;
       align-items: center;
-      width: 100%;
       height: 100vh;
+      width: 100%;
       min-height: 400px;
       position: absolute;
       top: 0;
       left: 0;
       z-index: 2;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .header__container {
+      .header__nav-container-mobile {
+        display: none;
+      }
+
+      .header__nav-container-desktop {
+        display: flex;
+        flex: 1;
+        height: 100%;
+        justify-content: flex-end;
+
+        .header__nav-desktop {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: flex-end;
+
+          .header__list {
+            display: flex;
+            list-style: none;
+            align-items: center;
+            height: 100%;
+
+            .header__item {
+              padding: 0 20px;
+            }
+
+            .header__link {
+              font-size: 20px;
+              color: $secondary;
+              position: relative;
+
+              &::before {
+                content: "";
+                width: 0%;
+                height: 4px;
+                position: absolute;
+                bottom: -10px;
+                left: 0;
+                background-color: $primary;
+                transition: 0.4s;
+              }
+
+              &:hover::before {
+                width: 100%;
+                left: initial;
+                right: 0;
+              }
+            }
+
+            .--link-select {
+              color: $primary;
+            }
+          }
+        }
+      }
     }
   }
 }
