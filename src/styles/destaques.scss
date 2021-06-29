@@ -5,5 +5,52 @@
   .destaques__container {
     margin: 0 auto;
     width: 100%;
+
+    .destaques__cards {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      gap: 30px;
+
+      .destaques__card {
+        width: 95%;
+        max-width: 360px;
+
+        .destaques__image {
+          width: 100%;
+        }
+
+        .destaques__descricao {
+          display: flex;
+          flex-direction: column;
+
+          .destaques__title {
+            font-size: 20px;
+          }
+
+          .destaques__subtitle {
+            color: $subtitle;
+            font-size: 14px;
+            font-weight: 400;
+          }
+        }
+
+        .destaques__btn {
+          width: 40%;
+          margin-top: 7px;
+          background: $primary;
+          padding: 10px 0;
+          color: $text;
+          border-bottom: 4px solid $button;
+          transition: background 0.4s;
+        }
+
+        .destaques__btn:hover {
+          background: darken($primary, 5);
+        }
+      }
+    }
   }
 }

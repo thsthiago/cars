@@ -2,6 +2,7 @@ $primary: #6c26ff;
 $secondary: #242424;
 $button: #4700df;
 $text: #eae9e9;
+$subtitle: #656565;
 
 * {
   margin: 0;
@@ -67,13 +68,17 @@ button {
 
   &::after,
   &::before {
-    width: 35%;
+    width: 13%;
     height: 7px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     content: "";
     background-color: $secondary;
+
+    @media (min-width: 768px) {
+      width: 33%;
+    }
   }
 
   &::before {

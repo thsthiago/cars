@@ -7,7 +7,7 @@ class Card {
 
   createButton() {
     const btn = document.createElement('button')
-    btn.classList.add('descricao__btn')
+    btn.classList.add('destaques__btn')
     btn.type = 'button'
     btn.innerText = 'Mais detalhes'
 
@@ -34,6 +34,9 @@ class Card {
 
   createImage() {
     const image = new Image()
+    image.src = 'https://images.pexels.com/photos/3802508/pexels-photo-3802508.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
+    image.alt = 'Foto do veículo'
+    image.classList.add('destaques__image')
     return image
   }
 
