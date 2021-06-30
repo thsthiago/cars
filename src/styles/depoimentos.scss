@@ -1,0 +1,90 @@
+.depoimentos {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  .depoimentos__servicos,
+  .depoimentos__list {
+    flex: 1;
+    height: 400px;
+    display: flex;
+
+    .depoimentos__descricao {
+      width: 100%;
+      max-width: 550px;
+      padding-top: 70px;
+      position: relative;
+
+      h1 {
+        color: $text;
+        font-size: 27px;
+      }
+    }
+  }
+
+  .depoimentos__servicos {
+    background: $secondary;
+    justify-content: flex-end;
+
+    ul {
+      list-style: inside;
+      padding-top: 30px;
+      padding-left: 20px;
+
+      li {
+        color: $text;
+        font-size: 20px;
+      }
+    }
+
+    button {
+      position: absolute;
+      bottom: 10%;
+      right: 10%;
+    }
+  }
+
+  .depoimentos__list {
+    background: $primary;
+    justify-content: flex-start;
+    padding-left: 60px;
+
+    .depoimentos__desc {
+      margin-top: 30px;
+      color: $text;
+    }
+
+    .depoimentos__client {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 30px;
+
+      .depoimentos__controler {
+        width: 160px;
+        display: flex;
+        justify-content: space-between;
+
+        span {
+          cursor: pointer;
+          display: block;
+          border-width: 20px;
+          border-style: solid;
+
+          &:first-of-type {
+            border-color: transparent $button transparent transparent;
+          }
+
+          &:last-of-type {
+            border-color: transparent transparent transparent $button;
+          }
+        }
+      }
+
+      strong {
+        font-weight: 400;
+        color: $text;
+      }
+    }
+  }
+}
