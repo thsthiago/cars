@@ -3,6 +3,6 @@ const veiculosRouter = require('./veiculos.routes')
 
 const routes = Router()
 
-routes.use('/veiculos', veiculosRouter)
+routes.use('/', veiculosRouter)
 
 module.exports = routes
