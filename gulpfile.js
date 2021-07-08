@@ -3,9 +3,9 @@ const sass = require('gulp-sass')(require('sass'))
 const babel = require('gulp-babel')
 const concat = require('gulp-concat')
 
-gulp.task('default', babelExec)
+gulp.task('default', watch)
 gulp.task('sass', compilaSass)
-gulp.task('watch', watch)
+gulp.task('babelExec', babelExec)
 
 function compilaSass () {
   return gulp
@@ -24,7 +24,9 @@ function babelExec () {
 
 function watch () {
   gulp.watch([
-    'src/public/styles/**/*.scss',
+    'src/public/styles/**/*.scss'
+  ], compilaSass)
+  gulp.watch([
     'src/public/js/**/*.js'
   ], babelExec)
 }
