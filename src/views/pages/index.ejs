@@ -1,66 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/main.css">
+  <%- include('../partials/head'); %>
   <title>CARS | HOME</title>
 </head>
 <body>
-  <header class="header">
-    <div class="header__container --container-limit">
-      <a href="#" class="header__logo">
-        <img src="../../assets/logo.svg">
-      </a>
-
-      <div class="header__nav-container-desktop">
-        <nav class="header__nav-desktop">
-          <ul class="header__list">
-            <li class="header__item">
-              <a class="header__link --link-select" href="">Home</a>
-            </li>
-            <li class="header__item">
-              <a class="header__link" href="">Vendas</a>
-            </li>
-            <li class="header__item">
-              <a class="header__link" href="">Sobre</a>
-            </li>
-            <li class="header__item">
-              <a class="header__link" href="">Contato</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-
-      <div class="header__nav-container-mobile">
-        <button class="header__btn">
-          <span class="header__burger"></span>
-        </button>
-
-        <nav class="header__nav-mobile">
-          <ul class="header__list">
-            <li class="header__item">
-              <a class="header__link-mobile --link-select" href="#">Home</a>
-            </li>
-            <li class="header__item">
-              <a class="header__link-mobile" href="#">Vendas</a>
-            </li>
-            <li class="header__item">
-              <a class="header__link-mobile" href="#">Sobre</a>
-            </li>
-            <li class="header__item">
-              <a class="header__link-mobile" href="#">Contato</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-
-    </div>
-  </header>
+  <%- include('../partials/header'); %>
 
   <main>
     <section class="initial">
@@ -93,7 +38,11 @@
     <section class="destaques">
       <div class="destaques__container --container-limit">
         <h1 class="--title">VEÍCULOS EM DESTAQUE</h1>
-        <div class="destaques__cards"></div>
+        <div class="destaques__cards">
+          <% data.forEach(function(carro) { %>
+            <%- include('../partials/card', { carro: carro }) %>
+          <% }); %>
+        </div>
       </div>
     </section>
 
