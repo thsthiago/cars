@@ -121,7 +121,7 @@ As seguintes tecnologias foram utilizadas na construção do projeto:
 
 ## 👨🏽‍💻 Autor
 
- <img style="border-radius: 50%" src="https://avatars.githubusercontent.com/u/61162365?v=4" width="100px;" alt=""/>
+ <img style="border-radius: 50px" src="https://avatars.githubusercontent.com/u/61162365?v=4" width="100px;" alt=""/>
  <br />
  <sub><b>Thiago Cabral</b></sub></a>
  <br />
