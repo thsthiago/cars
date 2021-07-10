@@ -111,7 +111,7 @@ As seguintes tecnologias foram utilizadas na construção do projeto:
 - **Eslint**
 - **Typeorm**
 
-#### [](https://github.com/tgmarinho/Ecoleta#utilit%C3%A1rios)**Utilitários**
+#### **Utilitários**
 
 - Editor: **[Visual Studio Code](https://code.visualstudio.com/)**
 - DBeaver: **[DBeaver](https://dbeaver.io/download/)**
