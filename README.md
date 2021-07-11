@@ -21,7 +21,7 @@
 
 - [ ] Home
   - [x] Veículos em destaque
-  - [ ] Carousel depoimentos
+  - [x] Carousel depoimentos
   - [ ] Formulário
 - [ ] Sobre
 - [ ] Veículos

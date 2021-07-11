@@ -43,21 +43,24 @@ window.addEventListener('resize', function () {
 var handleNext = function handleNext() {
   if (item !== 3) {
     depoimentos.style.transform = "translateX(-".concat(widthContainer * item, "px)");
+    previusBtn.classList.remove('--disable');
+    if (item === 2) nextBtn.classList.add('--disable');
     item++;
   }
 };
 
 var handlePrevius = function handlePrevius() {
   if (item !== 1) {
+    nextBtn.classList.remove('--disable');
+
     if (item === 2) {
       depoimentos.style.transform = 'translateX(0px)';
+      previusBtn.classList.add('--disable');
       item = 1;
     } else {
       depoimentos.style.transform = "translateX(-".concat(widthContainer, "px)");
       item = 2;
     }
-
-    if (item < 2) nextBtn.addEventListener('click', handleNext);
   }
 };
 
