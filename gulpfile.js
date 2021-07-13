@@ -2,10 +2,12 @@ const gulp = require('gulp')
 const sass = require('gulp-sass')(require('sass'))
 const babel = require('gulp-babel')
 const concat = require('gulp-concat')
+const imagemin = require('gulp-imagemin')
 
 gulp.task('default', watch)
 gulp.task('sass', compilaSass)
 gulp.task('babelExec', babelExec)
+gulp.task('imagemin', minImage)
 
 function compilaSass () {
   return gulp
@@ -22,6 +24,13 @@ function babelExec () {
     .pipe(gulp.dest('src/dist'))
 }
 
+function minImage () {
+  return gulp
+    .src('src/public/images/*')
+    .pipe(imagemin())
+    .pipe(gulp.dest('src/dist/images'))
+}
+
 function watch () {
   gulp.watch([
     'src/public/styles/**/*.scss'
@@ -29,4 +38,7 @@ function watch () {
   gulp.watch([
     'src/public/js/**/*.js'
   ], babelExec)
+  gulp.watch([
+    'src/public/images/*'
+  ], minImage)
 }
