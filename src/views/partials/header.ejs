@@ -1,30 +1,34 @@
 <header class="header">
   <div class="header__container --container-limit">
     <a href="#" class="header__logo">
-      <img src="../../images/logo.svg">
+      <img src="../../images/logo.svg" alt="Logo">
     </a>
 
     <div class="header__nav-container-desktop">
       <nav class="header__nav-desktop">
         <ul class="header__list">
           <li class="header__item">
-            <a class="header__link --link-select" href="">Home</a>
+            <a class="header__link <% if(page == 'home') { %>
+            --link-select
+            <% } %>" href="/">Home</a>
           </li>
           <li class="header__item">
-            <a class="header__link" href="">Vendas</a>
+            <a class="header__link <% if(page == 'vendas') { %>
+              --link-select
+            <% } %>" href="/vendas">Vendas</a>
           </li>
           <li class="header__item">
-            <a class="header__link" href="">Sobre</a>
+            <a class="header__link" href="#">Sobre</a>
           </li>
           <li class="header__item">
-            <a class="header__link" href="">Contato</a>
+            <a class="header__link" href="#">Contato</a>
           </li>
         </ul>
       </nav>
     </div>
 
     <div class="header__nav-container-mobile">
-      <button class="header__btn">
+      <button class="header__btn" aria-label="button" >
         <span class="header__burger"></span>
       </button>
 

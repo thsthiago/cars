@@ -19,6 +19,7 @@ const data = [
 module.exports = {
   get: (request, response) => {
     return response.render('index', {
+      page: 'home',
       data
     })
   }

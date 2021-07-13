@@ -5,7 +5,7 @@
   <title>CARS | HOME</title>
 </head>
 <body>
-  <%- include('../partials/header'); %>
+  <%- include('../partials/header', { page: page }) %>
 
   <main>
     <section class="initial">
@@ -116,6 +116,6 @@
   </main>
 
   <footer></footer>
-  <script src="all.js"></script>
+  <script async src="all.js"></script>
 </body>
 </html>

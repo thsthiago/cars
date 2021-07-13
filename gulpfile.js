@@ -38,7 +38,4 @@ function watch () {
   gulp.watch([
     'src/public/js/**/*.js'
   ], babelExec)
-  gulp.watch([
-    'src/public/images/*'
-  ], minImage)
 }
