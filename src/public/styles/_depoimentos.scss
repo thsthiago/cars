@@ -41,6 +41,15 @@
       position: absolute;
       bottom: 10%;
       right: 10%;
+
+      a {
+        text-decoration: none;
+        color: $text;
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 10px 0;
+      }
     }
   }
 
