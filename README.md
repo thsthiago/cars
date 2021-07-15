@@ -52,6 +52,7 @@ O layout da aplicação está disponível no Figma:
 <a href="https://www.figma.com/file/MUxOdLa242mLU12oe6ubHJ/Cars?node-id=0%3A1">
   <img alt="Layout Figma" src="https://img.shields.io/badge/Acessar%20Layout-Figma-red">
 </a>
+
 ---
 
 ## 🚀 Como executar o projeto
