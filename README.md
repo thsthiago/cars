@@ -19,7 +19,7 @@
 
 **Pages**:
 
-- [ ] Home
+- [x] Home
   - [x] Veículos em destaque
   - [x] Carousel depoimentos
   - [x] Formulário
