@@ -25,6 +25,7 @@ h5,
 strong,
 nav a {
   font-family: "Oswald", sans-serif;
+  font-display: swap;
 }
 
 a {
@@ -37,6 +38,7 @@ strong,
 span,
 li {
   font-family: "Roboto", sans-serif;
+  font-display: swap;
 }
 
 header,
@@ -71,39 +73,29 @@ button {
 }
 
 .--title {
-  margin: 30px 0;
+  margin: 30px auto;
   width: 100%;
-  color: $primary;
-  font-size: 25px;
-  position: relative;
-  text-align: center;
+  display: flex;
+  align-items: center;
 
-  &::after,
-  &::before {
-    width: 13%;
-    height: 7px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    content: "";
-    background-color: $secondary;
-
-    @media (min-width: 768px) {
-      width: 33%;
-    }
+  h1 {
+    font-size: 25px;
+    text-align: center;
+    display: inline-block;
+    padding: 0 2%;
+    color: $primary;
   }
 
-  &::before {
-    left: 0;
-  }
-
-  &::after {
-    right: 0;
+  span {
+    display: block;
+    flex: 1;
+    height: 5px;
+    background: $secondary;
   }
 }
 
 .--container-limit {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1300px;
   padding: 0 2%;
 }

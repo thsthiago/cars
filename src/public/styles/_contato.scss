@@ -1,0 +1,44 @@
+.contatos__container {
+  padding-bottom: 45px;
+
+  .contatos__form {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    padding-top: 35px;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 auto;
+
+    input,
+    textarea {
+      border: 2px solid #c1c1c1;
+      padding: 14px;
+      width: 100%;
+      outline: none;
+    }
+
+    textarea {
+      resize: none;
+      height: 100px;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: #656565;
+      font-weight: bold;
+      font-family: "Roboto", sans-serif;
+      font-display: swap;
+    }
+
+    .contatos__flex {
+      display: flex;
+      gap: 14px;
+    }
+
+    .contatos__btn {
+      margin: 5px auto;
+      padding: 13px 0;
+    }
+  }
+}
