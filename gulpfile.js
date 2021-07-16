@@ -20,8 +20,7 @@ function babelExec () {
   return gulp
     .src('src/public/js/**/*.js')
     .pipe(babel({ presets: ['@babel/preset-env'] }))
-    .pipe(concat('all.js'))
-    .pipe(gulp.dest('src/dist'))
+    .pipe(gulp.dest('src/dist/js'))
 }
 
 function minImage () {

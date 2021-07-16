@@ -12,20 +12,6 @@ function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Sy
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
-var btn = document.querySelector('.header__btn');
-var burger = document.querySelector('.header__burger');
-var header = document.querySelector('.header__nav-container-mobile');
-var nav = document.querySelector('.header__nav-mobile');
-
-var activeBars = function activeBars() {
-  burger.classList.toggle('--burger');
-  nav.classList.toggle('--header-nav-active');
-  btn.classList.toggle('--header-btn-active');
-  header.classList.toggle('--header-mobile-active');
-};
-
-btn.addEventListener('click', activeBars);
-
 var _document$querySelect = document.querySelectorAll('.depoimentos__controler span'),
     _document$querySelect2 = _slicedToArray(_document$querySelect, 2),
     previusBtn = _document$querySelect2[0],
