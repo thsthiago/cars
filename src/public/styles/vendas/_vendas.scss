@@ -1,0 +1,82 @@
+.main {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 3;
+  grid-template-areas:
+    "title title title title"
+    "filtro filtro filtro filtro"
+    "veiculos veiculos veiculos veiculos";
+
+  .--title {
+    grid-area: title;
+  }
+
+  .filtro {
+    grid-area: filtro;
+
+    .filtro__form {
+      .--filtro-item {
+        display: flex;
+        flex-direction: column;
+
+        label {
+          font-size: 16px;
+          font-family: "Rototo", sans-serif;
+          font-weight: bold;
+          margin: 20px 0 8px;
+        }
+
+        input[type="text"],
+        select {
+          width: 100%;
+          padding: 10px;
+        }
+      }
+
+      .filtro__value {
+        .filtro__slider {
+          outline: none;
+          appearance: none;
+          width: 100%;
+          border-radius: 15px;
+          height: 35px;
+          border: 2px solid #d9d0d0;
+          background: linear-gradient(90deg, #401698 50%, #fff 50%);
+
+          &::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            height: 40px;
+            width: 40px;
+            cursor: pointer;
+            background: linear-gradient(180deg, #6c26ff 0%, #401698 60.87%);
+            border: 1px solid #000000;
+            box-sizing: border-box;
+            border-radius: 10px;
+          }
+        }
+      }
+
+      .filtro__year {
+        strong {
+          font-size: 16px;
+          font-family: "Rototo", sans-serif;
+          font-weight: bold;
+          margin: 20px 0 8px;
+          display: block;
+        }
+
+        label {
+          display: block;
+          margin-bottom: 5px;
+          font-family: "Rototo", sans-serif;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .vendas {
+    grid-area: veiculos;
+  }
+}

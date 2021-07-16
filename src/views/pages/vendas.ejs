@@ -9,7 +9,58 @@
 <body>
   <%- include('../partials/header'); %>
 
-  <%- include('../partials/footer'); %>
+  <main class="main --container-limit">
+    <div class="--title">
+      <span></span>
+      <h1>VENDAS</h1>
+      <span></span>
+    </div>
+
+    <aside class="filtro">
+      <form class="filtro__form">
+        <div class="filtro__name --filtro-item">
+          <label for="name">Filtro por nome</label>
+          <input type="text" name="name" placeholder="Nome do veículo"/>
+        </div>
+
+        <div class="filtro__value --filtro-item">
+          <label for="valor">Filtro por preço</label>
+          <input type="range" name="valor" class="filtro__slider"/>
+        </div>
+
+        <div class="filtro__year">
+          <strong>Filtro por ano</strong>
+          <label for="all">
+            <input type="checkbox" name="all" value="all">
+            Todas as décadas
+          </label>
+
+          <label for="1990-2000">
+            <input type="checkbox" name="1990-2000" value="1990-2000">
+            1990 - 2000
+          </label>
+
+          <label for="2001-2010">
+            <input type="checkbox" name="2001-2010">
+            2001 - 2010
+          </label>
+
+          <label for="2011-2021">
+            <input type="checkbox" name="2011-2021">
+            2011 - 2021
+          </label>
+
+        </div>
+      </form>
+    </aside>
+
+    <section class="veiculos">
+
+    </section>
+  </main>
+
+
+  <!-- <%- include('../partials/footer'); %> -->
   <script defer src="js/bars.js"></script>
 </body>
 </html>
