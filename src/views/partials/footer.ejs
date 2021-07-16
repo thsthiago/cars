@@ -3,19 +3,27 @@
     <nav class="footer__nav">
       <ul class="footer__list">
         <li class="footer__item">
-          <a href="#">Home</a>
+          <a class="footer__link <% if(page == 'home') { %>
+            --link-select
+          <% } %>" href="/">Home</a>
         </li>
 
         <li class="footer__item">
-          <a href="#">Venda</a>
+          <a class="footer__link <% if(page == 'vendas') { %>
+            --link-select
+          <% } %>" href="/vendas">Venda</a>
         </li>
 
         <li class="footer__item">
-          <a href="#">Sobre</a>
+          <a class="footer__link <% if(page == 'sobre') { %>
+            --link-select
+          <% } %>" href="/sobre">Sobre</a>
         </li>
 
         <li class="footer__item">
-          <a href="#">Contato</a>
+          <a class="footer__link <% if(page == 'contato') { %>
+            --link-select
+          <% } %>" href="/contato">Contato</a>
         </li>
       </ul>
     </nav>

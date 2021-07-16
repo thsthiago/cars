@@ -21,7 +21,7 @@
         margin: 0 auto;
 
         .footer__item {
-          a {
+          .footer__link {
             color: $text;
             font-size: 20px;
             transition: color 0.3s;
@@ -29,6 +29,10 @@
             &:hover {
               color: $primary;
             }
+          }
+
+          .--link-select {
+            color: $primary;
           }
         }
       }
