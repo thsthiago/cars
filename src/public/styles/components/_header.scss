@@ -133,11 +133,16 @@
         left: 3%;
         top: 3%;
         transform: translateY(0);
+        z-index: 3;
       }
 
       .header__nav-mobile {
-        display: none;
+        transform: translateX(150%);
+        height: 100vh;
         width: 100%;
+        min-height: 400px;
+        opacity: 0;
+        transition: transform 0.4s;
 
         .header__list {
           width: 100%;
@@ -175,7 +180,8 @@
       }
 
       .--header-nav-active {
-        display: block;
+        transform: translateX(0%);
+        opacity: 1;
       }
     }
 
