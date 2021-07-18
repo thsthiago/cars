@@ -25,7 +25,11 @@
 
         <div class="filtro__value --filtro-item">
           <label for="valor">Filtro por preço</label>
-          <input type="range" name="valor" class="filtro__slider"/>
+          <input type="range" name="valor" min="0" max="500000" value="0" class="filtro__slider"/>
+          <div class="values">
+            <span class="value__initial">R$0</span>
+            <span class="value__final">R$500,000</span>
+          </div>
         </div>
 
         <div class="filtro__year">
@@ -61,6 +65,8 @@
 
 
   <!-- <%- include('../partials/footer'); %> -->
+
+  <script defer src="js/slider_filter.js"></script>
   <script defer src="js/bars.js"></script>
 </body>
 </html>
