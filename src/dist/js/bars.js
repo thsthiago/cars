@@ -4,6 +4,7 @@ var btn = document.querySelector('.header__btn');
 var burger = document.querySelector('.header__burger');
 var header = document.querySelector('.header__nav-container-mobile');
 var nav = document.querySelector('.header__nav-mobile');
+var contato = document.querySelectorAll('.header__nav-mobile .header__item')[3];
 
 var activeBars = function activeBars() {
   burger.classList.toggle('--burger');
@@ -13,3 +14,4 @@ var activeBars = function activeBars() {
 };
 
 btn.addEventListener('click', activeBars);
+contato.addEventListener('click', activeBars);

@@ -21,9 +21,11 @@
         </li>
 
         <li class="footer__item">
-          <a class="footer__link <% if(page == 'contato') { %>
-            --link-select
-          <% } %>" href="/contato">Contato</a>
+          <a class="footer__link" href="<% if(page != 'home') { %>
+            /#contato
+          <% } else {%>
+              #contato
+          <% } %>">Contato</a>
         </li>
       </ul>
     </nav>
