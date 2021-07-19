@@ -17,6 +17,10 @@
     </div>
 
     <aside class="filtro">
+      <div class="filtro__container">
+
+      </div>
+
       <form class="filtro__form">
         <div class="filtro__name --filtro-item">
           <label for="name">Filtro por nome</label>
@@ -72,14 +76,16 @@
     </aside>
 
     <section class="veiculos">
-
+      <% data.forEach(function(carro) { %>
+        <%- include('../partials/card', { carro: carro }) %>
+      <% }); %>
     </section>
   </main>
 
 
-  <!-- <%- include('../partials/footer'); %> -->
-
+  <%- include('../partials/footer'); %>
   <script defer src="js/slider_filter.js"></script>
   <script defer src="js/bars.js"></script>
+  <script src="https://kit.fontawesome.com/e796b83976.js" crossorigin="anonymous"></script>
 </body>
 </html>

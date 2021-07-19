@@ -1,15 +1,20 @@
-<div class="destaques__card">
+<div class="card">
   <img
     src="<%- carro.image %>"
     alt="Foto do <%- carro.nome %>"
-    class="destaques__image"
+    class="card__image"
   >
 
-  <div class="destaques__descricao">
-    <strong class="destaques__title"><%- carro.nome %></strong>
-    <strong class="destaques__subtitle"><%- carro.info %></strong>
+  <div class="card__descricao">
+    <strong class="card__title"><%- carro.nome %></strong>
+    <strong class="card__subtitle"><%- carro.info %></strong>
+
+    <strong class="card__preco">
+      <span>R$</span>
+      6,000
+    </strong>
   </div>
-  <button class="destaques__btn" type="button">
+  <button class="card__btn" type="button">
     <a href="#">Mais detalhes</a>
   </button>
 </div>

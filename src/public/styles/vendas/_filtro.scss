@@ -1,5 +1,6 @@
 .filtro {
   grid-area: filtro;
+  padding-right: 20px;
 
   .filtro__form {
     .--filtro-item {
@@ -68,6 +69,7 @@
         padding-left: 25px;
         margin-top: 8px;
         font-family: "Roboto", sans-serif;
+        cursor: pointer;
 
         input {
           position: absolute;
@@ -120,6 +122,7 @@
         padding-left: 25px;
         margin-bottom: 5px;
         font-family: "Rototo", sans-serif;
+        cursor: pointer;
 
         input {
           position: absolute;

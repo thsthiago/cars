@@ -1,0 +1,62 @@
+.card {
+  width: 95%;
+  max-width: 330px;
+
+  .card__image {
+    width: 100%;
+    height: auto;
+  }
+
+  .card__descricao {
+    display: grid;
+    grid-template:
+      "title title preco preco"
+      "subtitle subtitle preco preco";
+
+    .card__title {
+      font-size: 20px;
+      grid-area: title;
+    }
+
+    .card__subtitle {
+      color: $subtitle;
+      font-size: 14px;
+      font-weight: 400;
+      grid-area: subtitle;
+    }
+
+    .card__preco {
+      grid-area: preco;
+      margin: auto;
+      font-size: clamp(1rem, 2vw, 2.5rem);
+
+      span {
+        position: relative;
+        top: -10px;
+        color: $subtitle;
+        font-size: 17px;
+      }
+    }
+  }
+
+  .card__btn {
+    width: 40%;
+    margin-top: 7px;
+    background: $primary;
+    border-bottom: 4px solid $button;
+    transition: background 0.4s;
+
+    a {
+      text-decoration: none;
+      color: $text;
+      display: block;
+      width: 100%;
+      height: 100%;
+      padding: 10px 0;
+    }
+
+    &:hover {
+      background: darken($primary, 5);
+    }
+  }
+}

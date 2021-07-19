@@ -14,52 +14,6 @@
       flex-wrap: wrap;
       justify-content: space-evenly;
       gap: 30px;
-
-      .destaques__card {
-        width: 95%;
-        max-width: 360px;
-
-        .destaques__image {
-          width: 100%;
-          height: auto;
-        }
-
-        .destaques__descricao {
-          display: flex;
-          flex-direction: column;
-
-          .destaques__title {
-            font-size: 20px;
-          }
-
-          .destaques__subtitle {
-            color: $subtitle;
-            font-size: 14px;
-            font-weight: 400;
-          }
-        }
-
-        .destaques__btn {
-          width: 40%;
-          margin-top: 7px;
-          background: $primary;
-          border-bottom: 4px solid $button;
-          transition: background 0.4s;
-
-          a {
-            text-decoration: none;
-            color: $text;
-            display: block;
-            width: 100%;
-            height: 100%;
-            padding: 10px 0;
-          }
-        }
-
-        .destaques__btn:hover {
-          background: darken($primary, 5);
-        }
-      }
     }
   }
 }

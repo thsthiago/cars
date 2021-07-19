@@ -1,7 +1,8 @@
 .main {
+  border-top: 6px solid $primary;
   display: grid;
   grid-template-columns: 1;
-  grid-template-rows: 3;
+  grid-template-rows: 100px auto auto;
   grid-template-areas:
     "title title title title"
     "filtro filtro filtro filtro"
@@ -9,16 +10,22 @@
 
   .--title {
     grid-area: title;
+    margin: 0;
   }
 
-  .vendas {
+  .veiculos {
+    width: 100%;
     grid-area: veiculos;
+    display: flex;
+    justify-content: center;
+    // flex-wrap: wrap;
+    gap: 20px;
   }
 
   @media (min-width: 768px) {
     grid-template-areas:
       "title title title title"
-      "filtro veiculos veiculos veiculos"
-      "filtro veiculos veiculos veiculos";
+      "filtro filtro veiculos veiculos"
+      "filtro filtro veiculos veiculos";
   }
 }
