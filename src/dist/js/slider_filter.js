@@ -15,7 +15,7 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 var slider = document.querySelector('.filtro__slider');
 var span = document.querySelector('.value__initial');
 slider.addEventListener('input', function () {
-  var linearValue = parseInt((slider.value - 500000) / 500000 * 100) + 100;
+  var linearValue = parseInt((slider.value - 500000) / 500000 * 100) + 99.8;
   slider.style.background = "linear-gradient(90deg, #401698 ".concat(linearValue, "%, #fff ").concat(linearValue, "%)");
   var valueArr = slider.value.split('');
   var value = slider.value;

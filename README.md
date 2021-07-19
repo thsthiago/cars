@@ -20,6 +20,7 @@
 **Pages**:
 
 - [x] Home
+  - [x] Sessão initial
   - [x] Veículos em destaque
   - [x] Carousel depoimentos
   - [x] Formulário

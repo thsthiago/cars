@@ -64,8 +64,44 @@
       flex-direction: column;
 
       label {
+        position: relative;
+        padding-left: 25px;
         margin-top: 8px;
         font-family: "Roboto", sans-serif;
+
+        input {
+          position: absolute;
+          width: 0;
+          height: 0;
+        }
+
+        .--check-radio {
+          position: absolute;
+          left: 0;
+          top: 0;
+          display: block;
+          width: 18px;
+          height: 18px;
+          border-radius: 10px;
+          border: 1px solid rgb(94, 94, 94);
+
+          &:after {
+            display: none;
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 10px;
+            height: 10px;
+            border-radius: 5px;
+            background: $primary;
+          }
+        }
+
+        input:checked ~ .--check-radio:after {
+          display: block;
+        }
       }
     }
 
@@ -80,9 +116,54 @@
 
       label {
         display: block;
+        position: relative;
+        padding-left: 25px;
         margin-bottom: 5px;
         font-family: "Rototo", sans-serif;
+
+        input {
+          position: absolute;
+          width: 0;
+          height: 0;
+        }
+
+        input:checked ~ .--check:after {
+          display: block;
+        }
+
+        input:checked ~ .--check {
+          background: $primary;
+        }
+
+        .--check {
+          position: absolute;
+          display: block;
+          left: 0;
+          top: 0;
+          width: 20px;
+          height: 20px;
+          border: 1px solid rgb(94, 94, 94);
+          border-radius: 3px;
+
+          &:after {
+            content: "";
+            position: absolute;
+            display: none;
+            left: 45%;
+            top: 4px;
+            width: 5px;
+            height: 10px;
+            border: solid white;
+            transform: rotate(45deg) translateX(-50%);
+            border-width: 0 2px 2px 0;
+          }
+        }
       }
     }
+  }
+
+  @media (min-width: 768px) {
+    max-width: 300px;
+    width: 100%;
   }
 }

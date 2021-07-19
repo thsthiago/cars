@@ -14,4 +14,11 @@
   .vendas {
     grid-area: veiculos;
   }
+
+  @media (min-width: 768px) {
+    grid-template-areas:
+      "title title title title"
+      "filtro veiculos veiculos veiculos"
+      "filtro veiculos veiculos veiculos";
+  }
 }
