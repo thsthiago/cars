@@ -1,6 +1,7 @@
 .card {
-  width: 95%;
+  width: 47%;
   max-width: 330px;
+  min-width: 110px;
 
   .card__image {
     width: 100%;
@@ -41,6 +42,7 @@
 
   .card__btn {
     width: 40%;
+    min-width: 100px;
     margin-top: 7px;
     background: $primary;
     border-bottom: 4px solid $button;
@@ -58,5 +60,9 @@
     &:hover {
       background: darken($primary, 5);
     }
+  }
+
+  @media (min-width: 768px) {
+    width: 30%;
   }
 }
