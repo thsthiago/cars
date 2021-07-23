@@ -23,7 +23,7 @@
         </button>
       </div>
 
-      <form class="filtro__form">
+      <form class="filtro__form" method="GET">
         <div class="filtro__name --filtro-item">
           <label for="name">Filtro por nome</label>
           <input type="text" name="name" placeholder="Nome do veículo"/>
@@ -74,6 +74,11 @@
           </label>
 
         </div>
+
+        <button class="filtro__submit" type="submit">
+          Filtrar
+          <i class="fas fa-filter"></i>
+        </button>
       </form>
     </aside>
 

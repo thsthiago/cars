@@ -10,6 +10,7 @@
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
 
     button {
+      background-color: #fff;
       font-size: 20px;
       color: $primary;
     }
@@ -20,6 +21,8 @@
     position: relative;
     z-index: 3;
     background-color: #fff;
+    padding: 20px 2%;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
 
     .--filtro-item {
       display: flex;
@@ -181,6 +184,29 @@
         }
       }
     }
+
+    .filtro__submit {
+      position: relative;
+      width: 100%;
+      color: $text;
+      background: linear-gradient(180deg, #6c26ff 0%, #401698 60.87%);
+      font-size: 16px;
+      border-radius: 4px;
+      padding: 10px 5px;
+      margin-top: 15px;
+      text-align: center;
+
+      &:hover {
+        background: linear-gradient(180deg, #5f17fa 0%, #39128f 60.87%);
+      }
+
+      i {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 5px;
+      }
+    }
   }
 
   .filtro--block {
@@ -193,15 +219,18 @@
     padding-right: 20px;
     top: 150px;
     position: fixed;
-    transition: all 0.4s;
 
     .filtro__container {
       display: none;
+      padding-right: 0px;
+      box-shadow: none;
     }
 
     .filtro__form {
       display: block;
       background: transparent;
+      padding: 0px;
+      box-shadow: none;
     }
   }
 }
