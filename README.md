@@ -19,15 +19,25 @@
 
 **Pages**:
 
+**_Front-end:_**
+
 - [x] Home
   - [x] Sessão initial
   - [x] Veículos em destaque
   - [x] Carousel depoimentos
   - [x] Formulário
+- [x] Vendas
+  - [x] Filtro
+  - [x] Card veículo
 - [ ] Sobre
-- [ ] Veículos
 - [ ] Detalhes do veículos
 - [ ] Agendamentos
+
+**_Back-end:_**
+
+- [x] Rota Home
+- [x] Rota Vendas
+- [ ] Integração com CMS
 
 ## 💻 Sobre o projeto
 
