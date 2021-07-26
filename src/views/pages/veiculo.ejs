@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang='pt-BR'>
+<head>
+  <%- include('../partials/head'); %>
+  <link rel="stylesheet" href="../styles/veiculo/main.css">
+  <title>CARS | VEÍCULO</title>
+</head>
+
+<body>
+  <%- include('../partials/header'); %>
+
+  <main class="main">
+    <div class="slide">
+      <div class="slide__img">
+
+        <% data.images.forEach(function(img) { %>
+          <img src="<%- img %>" alt="veiculo">
+        <% }); %>
+
+        <button type="button">
+
+        </button>
+        <button type="button">
+
+        </button>
+      </div>
+
+      <div class="slide__images">
+
+      </div>
+    </div>
+  </main>
+
+  <%- include('../partials/footer'); %>
+
+  <script defer src="js/bars.js"></script>
+</body>
+</html>
