@@ -4,14 +4,23 @@
 
   .slide__img {
     margin: 40px auto 40px;
-    overflow-x: hidden;
+    overflow: hidden;
     width: 70%;
-    display: flex;
     position: relative;
-    height: 550px;
+    padding-top: 40%;
 
-    img {
+    .imgs {
       width: 100%;
+      display: flex;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: transform 0.4s;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
     }
 
     button {

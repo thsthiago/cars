@@ -12,10 +12,11 @@
   <main class="main --container-limit">
     <div class="slide">
       <div class="slide__img">
-
-        <% data.images.forEach(function(img) { %>
-          <img src="<%- img %>" alt="veiculo">
-        <% }); %>
+        <div class="imgs">
+          <% data.images.forEach(function(img) { %>
+            <img src="<%- img %>" alt="veiculo">
+          <% }); %>
+        </div>
 
         <button type="button" class="slide__next">
 
@@ -33,6 +34,8 @@
 
   <%- include('../partials/footer'); %>
 
-  <script defer src="js/bars.js"></script>
+
+  <script defer src="../js/slider_cars.js"></script>
+  <script defer src="../js/bars.js"></script>
 </body>
 </html>
