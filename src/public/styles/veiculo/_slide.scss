@@ -1,0 +1,39 @@
+.slide {
+  width: 100%;
+  height: 100%;
+
+  .slide__img {
+    margin: 40px auto 40px;
+    overflow-x: hidden;
+    width: 70%;
+    display: flex;
+    position: relative;
+    height: 550px;
+
+    img {
+      width: 100%;
+    }
+
+    button {
+      width: 50px;
+      height: 100px;
+      position: absolute;
+      z-index: 2;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .slide__next {
+      background: url("../../images/arrow_right.svg") no-repeat 100%;
+      right: 10px;
+    }
+
+    .slide__before {
+      background: url("../../images/arrow_left.svg") no-repeat 100%;
+      left: 0px;
+    }
+  }
+
+  @media (min-width: 768px) {
+  }
+}

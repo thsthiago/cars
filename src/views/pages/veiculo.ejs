@@ -9,7 +9,7 @@
 <body>
   <%- include('../partials/header'); %>
 
-  <main class="main">
+  <main class="main --container-limit">
     <div class="slide">
       <div class="slide__img">
 
@@ -17,10 +17,10 @@
           <img src="<%- img %>" alt="veiculo">
         <% }); %>
 
-        <button type="button">
+        <button type="button" class="slide__next">
 
         </button>
-        <button type="button">
+        <button type="button" class="slide__before">
 
         </button>
       </div>
