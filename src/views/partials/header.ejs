@@ -58,7 +58,11 @@
           <li class="header__item">
             <a class="header__link-mobile <% if(page == 'contato') { %>
               --link-select
-            <% } %>" href="#contato">Contato</a>
+            <% } %>" href="<% if(page != 'home') { %>
+              /#contato
+            <% } else {%>
+                #contato
+            <% } %>">Contato</a>
           </li>
         </ul>
       </nav>
