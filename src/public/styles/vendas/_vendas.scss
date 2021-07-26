@@ -1,5 +1,8 @@
+header {
+  border-bottom: 6px solid $primary;
+}
+
 .main {
-  border-top: 6px solid $primary;
   display: grid;
   grid-template-columns: 1;
   grid-template-rows: 100px 70px auto;
