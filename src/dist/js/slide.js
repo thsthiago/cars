@@ -19,35 +19,23 @@ var _document$querySelect = document.querySelectorAll('.depoimentos__controler s
 
 var depoimentos = document.querySelector('.depoimentos__client');
 var container = document.querySelector('.depoimentos__item');
-depoimentos.style.width = "".concat(container.clientWidth * 3, "px");
-var item = 1;
-var widthContainer = container.clientWidth;
-window.addEventListener('resize', function () {
-  depoimentos.style.width = "".concat(container.clientWidth * 3, "px");
-});
+var listDepoimentos = document.querySelectorAll('.depoimentos__desc').length;
+var index = 0;
 
 var handleNext = function handleNext() {
-  if (item !== 3) {
-    depoimentos.style.transform = "translateX(-".concat(widthContainer * item, "px)");
-    previusBtn.classList.remove('--disable');
-    if (item === 2) nextBtn.classList.add('--disable');
-    item++;
-  }
+  if (index === listDepoimentos - 2) nextBtn.classList.add('--disable');
+  if (index === listDepoimentos - 1) return;
+  previusBtn.classList.remove('--disable');
+  index++;
+  depoimentos.style.transform = "translateX(-".concat(index * 33.3, "%)");
 };
 
 var handlePrevius = function handlePrevius() {
-  if (item !== 1) {
-    nextBtn.classList.remove('--disable');
-
-    if (item === 2) {
-      depoimentos.style.transform = 'translateX(0px)';
-      previusBtn.classList.add('--disable');
-      item = 1;
-    } else {
-      depoimentos.style.transform = "translateX(-".concat(widthContainer, "px)");
-      item = 2;
-    }
-  }
+  if (index === 1) previusBtn.classList.add('--disable');
+  if (index === 0) return;
+  nextBtn.classList.remove('--disable');
+  index--;
+  depoimentos.style.transform = "translateX(-".concat(index * 33.3, "%)");
 };
 
 previusBtn.addEventListener('click', handlePrevius);

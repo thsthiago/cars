@@ -4,9 +4,6 @@
 
   .depoimentos__servicos,
   .depoimentos__list {
-    width: 100%;
-    height: auto;
-    display: flex;
     padding-bottom: 20px;
 
     .depoimentos__descricao {
@@ -26,6 +23,7 @@
     justify-content: flex-end;
     padding: 0 10% 0;
     min-height: 330px;
+    width: 100%;
 
     ul {
       list-style: inside;
@@ -56,17 +54,17 @@
 
   .depoimentos__list {
     background: $primary;
-    justify-content: flex-start;
-    padding: 0 10% 40px;
+    padding: 0 4% 40px;
+    width: 100%;
 
     .depoimentos__item {
-      overflow-x: hidden;
+      width: 92%;
+      overflow: hidden;
 
       .depoimentos__client {
+        width: 300%;
         display: flex;
-        align-items: center;
         transition: transform 0.5s ease-in-out;
-        transform: translateX(0);
 
         .depoimentos__desc {
           margin-top: 30px;
@@ -74,7 +72,7 @@
           width: 100%;
           height: 100%;
           position: relative;
-          padding-right: 40px;
+          padding-right: 5px;
 
           strong {
             font-weight: 400;
@@ -128,6 +126,14 @@
       padding: 0;
       padding-left: 80px;
       padding-bottom: 20px;
+
+      .depoimentos__item {
+        width: calc(100% - 80px);
+
+        .depoimentos__desc {
+          width: 100%;
+        }
+      }
 
       .depoimentos__descricao {
         max-width: 550px;

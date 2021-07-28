@@ -1,37 +1,24 @@
 const [previusBtn, nextBtn] = document.querySelectorAll('.depoimentos__controler span')
 const depoimentos = document.querySelector('.depoimentos__client')
 const container = document.querySelector('.depoimentos__item')
+const listDepoimentos = document.querySelectorAll('.depoimentos__desc').length
 
-depoimentos.style.width = `${container.clientWidth * 3}px`
-
-let item = 1
-const widthContainer = container.clientWidth
-
-window.addEventListener('resize', () => {
-  depoimentos.style.width = `${container.clientWidth * 3}px`
-})
+let index = 0
 
 const handleNext = () => {
-  if (item !== 3) {
-    depoimentos.style.transform = `translateX(-${widthContainer * item}px)`
-    previusBtn.classList.remove('--disable')
-    if (item === 2) nextBtn.classList.add('--disable')
-    item++
-  }
+  if (index === listDepoimentos - 2) nextBtn.classList.add('--disable')
+  if (index === listDepoimentos - 1) return
+  previusBtn.classList.remove('--disable')
+  index++
+  depoimentos.style.transform = `translateX(-${index * 33.3}%)`
 }
 
 const handlePrevius = () => {
-  if (item !== 1) {
-    nextBtn.classList.remove('--disable')
-    if (item === 2) {
-      depoimentos.style.transform = 'translateX(0px)'
-      previusBtn.classList.add('--disable')
-      item = 1
-    } else {
-      depoimentos.style.transform = `translateX(-${widthContainer}px)`
-      item = 2
-    }
-  }
+  if (index === 1) previusBtn.classList.add('--disable')
+  if (index === 0) return
+  nextBtn.classList.remove('--disable')
+  index--
+  depoimentos.style.transform = `translateX(-${index * 33.3}%)`
 }
 
 previusBtn.addEventListener('click', handlePrevius)

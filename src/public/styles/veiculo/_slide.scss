@@ -5,9 +5,9 @@
   .slide__img {
     margin: 40px auto 40px;
     overflow: hidden;
-    width: 70%;
+    width: 100%;
     position: relative;
-    padding-top: 40%;
+    padding-top: 60%;
 
     .imgs {
       width: 100%;
@@ -24,8 +24,8 @@
     }
 
     button {
-      width: 50px;
-      height: 100px;
+      width: 20px;
+      height: 50px;
       position: absolute;
       z-index: 2;
       top: 50%;
@@ -33,16 +33,29 @@
     }
 
     .slide__next {
-      background: url("../../images/arrow_right.svg") no-repeat 100%;
-      right: 10px;
+      background: url("../../images/arrow_right.svg") no-repeat;
+      background-size: 70% 100%;
+      background-position: center;
+      right: 0px;
     }
 
     .slide__before {
-      background: url("../../images/arrow_left.svg") no-repeat 100%;
+      background: url("../../images/arrow_left.svg") no-repeat;
+      background-size: 70% 100%;
+      background-position: center;
       left: 0px;
     }
   }
 
   @media (min-width: 768px) {
+    .slide__img {
+      width: 70%;
+      padding-top: 40%;
+
+      button {
+        width: 50px;
+        height: 100px;
+      }
+    }
   }
 }
