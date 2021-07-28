@@ -3,7 +3,7 @@
   height: 100%;
 
   .slide__img {
-    margin: 40px auto 40px;
+    margin: 40px auto 4px;
     overflow: hidden;
     width: 100%;
     position: relative;
@@ -11,6 +11,7 @@
 
     .imgs {
       width: 100%;
+      height: 100%;
       display: flex;
       position: absolute;
       top: 0;
@@ -19,7 +20,6 @@
 
       img {
         width: 100%;
-        height: 100%;
       }
     }
 
@@ -50,12 +50,33 @@
   @media (min-width: 768px) {
     .slide__img {
       width: 70%;
-      padding-top: 40%;
+      padding-top: 45%;
 
       button {
         width: 50px;
         height: 100px;
       }
+    }
+  }
+}
+
+.carousel {
+  overflow: hidden;
+  margin: 0 auto;
+  width: 70%;
+  position: relative;
+  padding-top: 13%;
+
+  .carousel__images {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+    img {
+      width: 28%;
     }
   }
 }
