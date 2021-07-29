@@ -26,11 +26,93 @@
         </button>
       </div>
     </div>
+
+    <section>
+      <div class="descricao">
+        <h1>Nome do veículo</h1>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          ac tincidunt lorem. Nulla condimentum et dolor et convallis. Mauris
+          egestas ligula in pharetra venenatis. Etiam pharetra ipsum libero,
+          vitae dignissim tortor imperdiet et. Aenean in tellus lorem ligula in
+          pharetra venenatis. Etiam pharetra ipsum libero, vitae dignissim tortor
+          imperdiet et. Aenean in tellus lorem ligula in pharetra venenatis. Etiam
+          pharetra ipsum libero, vitae dignissim tortor imperdiet et. Aenean in
+          tellus lorem.
+        </p>
+
+        <h2>Características</h2>
+
+        <div class="descricao__caracteristicas">
+          <ul>
+            <li>
+              <strong>
+                Ano/Molelo
+              </strong>
+              <span>
+                2020/2020
+              </span>
+            </li>
+
+            <li>
+              <strong>
+                Km
+              </strong>
+              <span>
+                100.000
+              </span>
+            </li>
+
+            <li>
+              <strong>
+                Câmbio
+              </strong>
+              <span>
+                Manual
+              </span>
+            </li>
+
+            <li>
+              <strong>
+                Licenciado
+              </strong>
+              <span>
+                Não
+              </span>
+            </li>
+          </ul>
+        </div>
+
+        <h2>Vendedor</h2>
+
+        <stron>Vendedor: Nome do vendedor</stron>
+      </div>
+
+      <div class="form">
+        <h1>Preço:</h1>
+        <strong>R$ 70.000</strong>
+
+        <h2>
+          Tem interesse no veículo?<br>
+          Deixe o seu contato
+        </h2>
+
+        <form>
+          <input name="name" placeholder="Nome*">
+          <input type="email" name="email" placeholder="E-mail*">
+          <input type="tel" name="phone" placeholder="Telefone*">
+          <textarea name="message" placeholder="Messagem(opcional)"></textarea>
+        </form>
+
+      </div>
+    </section>
+
   </main>
 
   <%- include('../partials/footer'); %>
 
-  <script defer src="../js/slider_cars.js"></script>
+  <script type="module" defer src="../js/slider_cars.js"></script>
   <script defer src="../js/bars.js"></script>
 </body>
 </html>

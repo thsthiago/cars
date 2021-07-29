@@ -1,7 +1,6 @@
 const gulp = require('gulp')
 const sass = require('gulp-sass')(require('sass'))
 const babel = require('gulp-babel')
-const concat = require('gulp-concat')
 const imagemin = require('gulp-imagemin')
 
 gulp.task('default', watch)
