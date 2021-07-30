@@ -1,3 +1,149 @@
 header {
   border-bottom: 6px solid $primary;
 }
+
+.description {
+  width: 100%;
+  margin: 40px auto 40px;
+
+  display: flex;
+  flex-direction: column;
+
+  .descricao {
+    margin-bottom: 30px;
+    flex: 1;
+
+    .descricao__title {
+      font-size: clamp(1.4rem, 2vw, 3rem);
+      color: $primary;
+      text-align: center;
+      font-weight: normal;
+      margin-bottom: 25px;
+    }
+
+    h2 {
+      color: $primary;
+      font-size: clamp(1.2rem, 2vw, 1.5rem);
+      font-weight: normal;
+      text-align: center;
+      margin: 15px 0 30px;
+      font-family: "Oswald", sans-serif;
+    }
+
+    p {
+      text-align: justify;
+    }
+
+    .descricao__list {
+      list-style: none;
+      display: flex;
+      justify-content: space-evenly;
+
+      .descricao__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: "Oswald", sans-serif;
+      }
+    }
+
+    .descricao__vendedor {
+      span {
+        font-family: "Oswald", sans-serif;
+        font-weight: bold;
+      }
+
+      font-weight: normal;
+    }
+  }
+
+  .form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    background: $primary;
+    border-radius: 4px;
+    padding: 24px 15px;
+
+    h1 {
+      font-size: 16px;
+      font-family: "Oswald", sans-serif;
+      color: $text;
+      font-weight: normal;
+      text-align: center;
+      transform: translateX(-85px);
+    }
+
+    .form__price {
+      display: block;
+      color: $text;
+      font-size: clamp(2rem, 2vw, 4rem);
+      font-weight: normal;
+      text-align: center;
+      margin: 4px 0;
+      font-family: "Oswald", sans-serif;
+    }
+
+    .form__subtitle {
+      color: $text;
+      text-align: center;
+      line-height: 25px;
+      font-size: clamp(1.3rem, 2vw, 2rem);
+      font-weight: normal;
+    }
+
+    form {
+      margin-top: 20px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      input,
+      textarea {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px 6px;
+        background: transparent;
+        border: 2px solid $text;
+        color: $text;
+        outline: none;
+      }
+
+      input::placeholder,
+      textarea::placeholder {
+        color: #cfcdcd;
+      }
+
+      textarea {
+        resize: none;
+        height: 100px;
+      }
+
+      .form__btn {
+        color: $text;
+        width: 100%;
+        padding: 13px 0;
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    width: 80%;
+
+    .descricao {
+      padding-right: 20px;
+      margin-bottom: 0px;
+    }
+
+    .form {
+      width: 30%;
+      margin-top: 0;
+
+      h1 {
+        transform: translateX(-60px);
+      }
+    }
+  }
+}

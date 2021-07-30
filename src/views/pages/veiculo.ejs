@@ -27,9 +27,9 @@
       </div>
     </div>
 
-    <section>
+    <section class="description">
       <div class="descricao">
-        <h1>Nome do veículo</h1>
+        <h1 class="descricao__title">Nome do veículo</h1>
 
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
@@ -45,8 +45,8 @@
         <h2>Características</h2>
 
         <div class="descricao__caracteristicas">
-          <ul>
-            <li>
+          <ul class="descricao__list">
+            <li class="descricao__item">
               <strong>
                 Ano/Molelo
               </strong>
@@ -55,7 +55,7 @@
               </span>
             </li>
 
-            <li>
+            <li class="descricao__item">
               <strong>
                 Km
               </strong>
@@ -64,7 +64,7 @@
               </span>
             </li>
 
-            <li>
+            <li class="descricao__item">
               <strong>
                 Câmbio
               </strong>
@@ -73,7 +73,7 @@
               </span>
             </li>
 
-            <li>
+            <li class="descricao__item">
               <strong>
                 Licenciado
               </strong>
@@ -86,23 +86,27 @@
 
         <h2>Vendedor</h2>
 
-        <stron>Vendedor: Nome do vendedor</stron>
+        <strong class="descricao__vendedor">
+          <span>Vendedor: </span>
+          Nome do vendedor
+        </strong>
       </div>
 
       <div class="form">
         <h1>Preço:</h1>
-        <strong>R$ 70.000</strong>
+        <strong class="form__price">R$ 70.000</strong>
 
-        <h2>
+        <h2 class="form__subtitle">
           Tem interesse no veículo?<br>
           Deixe o seu contato
         </h2>
 
-        <form>
+        <form action="../">
           <input name="name" placeholder="Nome*">
           <input type="email" name="email" placeholder="E-mail*">
           <input type="tel" name="phone" placeholder="Telefone*">
           <textarea name="message" placeholder="Messagem(opcional)"></textarea>
+          <button type="submit" class="form__btn --btn-form">Enviar</button>
         </form>
 
       </div>
