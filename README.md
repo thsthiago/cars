@@ -29,8 +29,8 @@
 - [x] Vendas
   - [x] Filtro
   - [x] Card veículo
-- [ ] Sobre
-- [ ] Detalhes do veículos
+- [x] Sobre
+- [x] Detalhes do veículos
 - [ ] Agendamentos
 
 **_Back-end:_**
