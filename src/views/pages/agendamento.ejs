@@ -2,12 +2,56 @@
 <html lang="pt-BR">
 <head>
   <%- include('../partials/head'); %>
-  <link rel="stylesheet" href="styles/home/main.css">
+  <link rel="stylesheet" href="./../../styles/agendamento/main.css">
   <title>CARS | AGENDAMENTO</title>
 </head>
 <body>
   <%- include('../partials/header', { page: page }) %>
 
+  <main class="main --container-limit">
+
+    <section class="formulario">
+      <h1 class="formulario__title">Agendamento de Test Drive</h1>
+
+      <form class="form">
+        <div class="form__w50">
+          <label for="name">
+            Nome*
+            <input type="text" name="name" placeholder="Nome">
+          </label>
+
+          <label for="sobrenome">
+            Sobrenome*
+            <input type="text" name="sobrenome" placeholder="Sobrenome">
+          </label>
+        </div>
+
+        <div class="form__w50">
+          <label for="email">
+            E-mail*
+            <input type="email" name="email" placeholder="E-mail">
+          </label>
+
+          <label for="telefone">
+            Telefone*
+            <input type="tel" name="telefone" placeholder="Telefone">
+          </label>
+        </div>
+
+        <select>
+          <option selected disabled>Datas e horários desponíveis</option>
+        </select>
+
+        <button type="submit" class="form-btn --btn">
+          Agendar
+        </button>
+
+      </form>
+    </section>
+  </main>
+
   <%- include('../partials/footer', { page: page }) %>
+
+  <script defer src="../../js/bars.js"></script>
 </body>
 </html>

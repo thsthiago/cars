@@ -27,5 +27,10 @@ module.exports = {
       page: 'veiculo',
       data
     })
+  },
+  agendamentoGet: (request, response) => {
+    return response.render('agendamento', {
+      page: 'agendamento'
+    })
   }
 }
