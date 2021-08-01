@@ -31,12 +31,14 @@
   - [x] Card veículo
 - [x] Sobre
 - [x] Detalhes do veículos
-- [ ] Agendamentos
+- [x] Agendamentos
 
 **_Back-end:_**
 
 - [x] Rota Home
-- [x] Rota Vendas
+- [ ] Rota Vendas
+- [ ] Rota Sobre
+- [ ] Rota Agendamento
 - [ ] Integração com CMS
 
 ## 💻 Sobre o projeto
