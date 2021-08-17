@@ -4,9 +4,13 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon src/app.js"
+    "start": "nodemon src/app.js",
+    "build": "gulp sass babelExec imagemin"
   },
   "dependencies": {
+    "axios": "^0.21.1",
+    "datocms-client": "^3.4.13",
+    "dotenv": "^10.0.0",
     "ejs": "^3.1.6",
     "express": "^4.17.1",
     "typeorm": "^0.2.34"

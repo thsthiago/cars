@@ -38,8 +38,10 @@ header {
       list-style: none;
       display: flex;
       justify-content: space-evenly;
+      flex-wrap: wrap;
 
       .descricao__item {
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -48,16 +50,11 @@ header {
         strong {
           margin-bottom: 3px;
         }
-      }
-    }
 
-    .descricao__vendedor {
-      span {
-        font-family: "Oswald", sans-serif;
-        font-weight: bold;
+        & + .descricao__item {
+          margin-top: 10px;
+        }
       }
-
-      font-weight: normal;
     }
   }
 
@@ -139,6 +136,10 @@ header {
     .descricao {
       padding-right: 20px;
       margin-bottom: 0px;
+
+      .descricao__list .descricao__item {
+        width: 50%;
+      }
     }
 
     .form {

@@ -1,3 +1,5 @@
+const { allVehicles } = require('../models/veiculos/veiculos')
+
 const data = [
   {
     nome: 'Uno',
@@ -72,7 +74,9 @@ const data = [
 ]
 
 module.exports = {
-  get (request, response) {
+  async get (request, response) {
+    await allVehicles()
+
     return response.render('vendas', {
       page: 'vendas',
       data
