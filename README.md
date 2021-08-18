@@ -35,6 +35,7 @@
 
 **_Back-end:_**
 
+- [x] Integrando datoCMS
 - [x] Rota Home
 - [ ] Rota Vendas
 - [ ] Rota Sobre
