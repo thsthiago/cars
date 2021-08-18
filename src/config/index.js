@@ -1,6 +1,10 @@
-const { SiteClient } = require('datocms-client')
+const axios = require('axios')
 require('dotenv').config()
 
-module.exports = {
-  client: new SiteClient(process.env.SECRET_TOKEN)
-}
+const api = axios.create({
+  baseURL: process.env.HOST
+})
+
+api.defaults.headers.common['Authorization'] = `Bearer ${process.env.SECRET_TOKEN}` //eslint-disable-line
+
+module.exports = api

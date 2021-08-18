@@ -1,15 +1,13 @@
-const { client } = require('../../config')
-require('dotenv').config()
+const api = require('../../config')
+const { allVehicles } = require('./query')
 
 module.exports = {
   allVehicles: async () => {
     try {
-      const response = await client.items.all({
-
-      }, {
-        allPages: true
+      const response = await api.post('/', {
+        query: allVehicles
       })
-      console.log(response[0].imagesgaleria)
+      return response.data.data
     } catch (err) {
       console.log(err.message)
     }

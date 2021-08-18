@@ -3,6 +3,7 @@ header {
 }
 
 .main {
+  width: 100%;
   display: grid;
   grid-template-columns: 1;
   grid-template-rows: 100px 70px auto;
@@ -27,14 +28,12 @@ header {
   }
 
   @media (min-width: 768px) {
+    grid-template-columns: 2;
     grid-template-rows: 100px auto auto;
+    grid-template-columns: 25% 80%;
     grid-template-areas:
       "title title title title"
-      "filtro filtro veiculos veiculos"
-      "filtro filtro veiculos veiculos";
-
-    .veiculos {
-      padding-left: 320px;
-    }
+      "filtro veiculos veiculos veiculos"
+      "filtro veiculos veiculos veiculos";
   }
 }

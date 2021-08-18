@@ -2,6 +2,8 @@
   width: 47%;
   max-width: 330px;
   min-width: 110px;
+  position: relative;
+  height: 215px;
 
   .card__image {
     width: 100%;
@@ -15,20 +17,25 @@
       "subtitle subtitle preco preco";
 
     .card__title {
-      font-size: 20px;
+      font-size: calmp(14px, 2.5vw, 20px);
       grid-area: title;
     }
 
     .card__subtitle {
+      width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      display: block;
       color: $subtitle;
       font-size: 14px;
       font-weight: 400;
       grid-area: subtitle;
+      text-overflow: ellipsis;
     }
 
     .card__preco {
       grid-area: preco;
-      margin: auto;
+      margin: 10px auto 0;
       font-size: clamp(1rem, 2vw, 2.5rem);
 
       span {
@@ -64,5 +71,6 @@
 
   @media (min-width: 768px) {
     width: 30%;
+    height: auto;
   }
 }

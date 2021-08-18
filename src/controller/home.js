@@ -1,18 +1,27 @@
 const data = [
   {
-    nome: 'Uno',
-    info: '1.6 8v, Gasolina, 2P, Manual',
-    image: 'https://images.pexels.com/photos/3802508/pexels-photo-3802508.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
+    modelo: 'Uno',
+    versao: '1.6 8v, Gasolina, 2P, Manual',
+    imageprincipal: {
+      url: 'https://images.pexels.com/photos/3802508/pexels-photo-3802508.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
+    },
+    preco: 70
   },
   {
     nome: 'Pálio',
-    info: '1.6 8v, Gasolina, 2P, Manual',
-    image: 'https://images.pexels.com/photos/3802508/pexels-photo-3802508.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
+    versao: '1.6 8v, Gasolina, 2P, Manual',
+    imageprincipal: {
+      url: 'https://images.pexels.com/photos/3802508/pexels-photo-3802508.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
+    },
+    preco: 20
   },
   {
     nome: 'Fox',
-    info: '1.6 8v, Gasolina, 2P, Manual',
-    image: 'https://images.pexels.com/photos/3802508/pexels-photo-3802508.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
+    versao: '1.6 8v, Gasolina, 2P, Manual',
+    imageprincipal: {
+      url: 'https://images.pexels.com/photos/3802508/pexels-photo-3802508.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
+    },
+    preco: 40
   }
 ]
 

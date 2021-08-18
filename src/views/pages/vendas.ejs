@@ -83,7 +83,7 @@
     </aside>
 
     <section class="veiculos">
-      <% data.forEach(function(carro) { %>
+      <% data.allVehicles.forEach(function(carro) { %>
         <%- include('../partials/card', { carro: carro }) %>
       <% }); %>
     </section>
